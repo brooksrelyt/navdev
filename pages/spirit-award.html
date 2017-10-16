@@ -1,0 +1,105 @@
+---
+layout: sub-pages
+title: Spirit of Maryland
+description:
+permalink: '/spirit/award/'
+---
+	
+    <div class="hero-wrapper overlay dark clearfix">
+        <div id="hero" class="header-banner" style="background-image:url('{{ site.baseurl }}/img/bg/event.png');"></div>
+        <div class="h-textarea">
+            <div class="h-textarea-inner">
+                <div class="textarea-intro">
+                    <img class="center img-responsive icon" src="{{ site.baseurl }}/img/icons/mckeldin-lrg.png">
+                    <h1 class="white center normal-case"><strong>Spirit of Maryland Royalty</strong></h1>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {% include /sections/spirit-of-maryland.html %}
+
+    <section class="white-bg">
+        <div class="container spaces">
+            <div class="col-md-8 col-md-offset-2">
+                <p><b class="red">Criteria for Award</b><br>Criteria for the award include outstanding scholarship, leadership, campus involvement, community service, and communication skills. A committee of faculty and staff interviews the students who are advanced to the final round of the application process. The Spirit of Maryland Award is presented at the halftime of the Homecoming football game.</p>
+                <p>To be eligible for the Spirit of Maryland Award, a student must:</p>
+                <ul>
+                    <li>Be recognized by the University as being of senior status</li>
+                    <li>Have 90+ academic credits*</li>
+                    <li>Have a cumulative grade point average of 3.0 or above.</li>
+                    <li>If the student is expected to graduate by May of the following semester, and does not have the current 90 academic credit senior status, (s)he may still be eligible to apply.</li>
+                </ul>
+                <p>Questions? Email Joe Calizo at <a href="mailto:jcalizo@umd.edu">jcalizo@umd.edu</a>.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="med-spaces">
+        <div class="container ">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2 class="section-title no-border no-pad no-marg full-override">Spirit of Maryland Nominees and Winners</h2>
+                    <p class="center">*denotes Spirit of Maryland award winners</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="med-spaces container">
+        <div class="row">
+            <div class="col-md-3">
+                <ul class="list-unstyled">
+                        <li class="bold red">2016</li>
+                    {% for item in site.data.nominees.n-2016 %}
+                        <li>{{ item.name }}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <ul class="list-unstyled">
+                        <li class="bold red">2015</li>
+                    {% for item in site.data.nominees.n-2015 %}
+                        <li>{{ item.name }}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <ul class="list-unstyled">
+                        <li class="bold red">2014</li>
+                    {% for item in site.data.nominees.n-2014 %}
+                        <li>{{ item.name }}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <ul class="list-unstyled">
+                        <li class="bold red">2013</li>
+                    {% for item in site.data.nominees.n-2013 %}
+                        <li>{{ item.name }}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="med-spaces container">
+        <div class="row">
+            <div class="col-md-3 col-md-offset-3">
+                <ul class="list-unstyled">
+                        <li class="bold red">2012</li>
+                    {% for item in site.data.nominees.n-2012 %}
+                        <li>{{ item.name }}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <ul class="list-unstyled">
+                        <li class="bold red">2011</li>
+                    {% for item in site.data.nominees.n-2011 %}
+                        <li>{{ item.name }}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+    </div>
+

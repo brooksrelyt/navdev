@@ -1,0 +1,47 @@
+spirit_royalty:
+  title: Spirit of Maryland Royalty
+  description: 'The Spirit of Maryland Award is presented annually in lieu of a traditional Homecoming King or Queen honoree. The Award is presented to a male or male-identified and female or female-identified member of the senior class who through their achievements has most exemplified the "spirit" of the University of Maryland. Criteria for the award include outstanding scholarship, leadership, campus involvement, community service, and communication skills. A committee of faculty and staff interviews students who are advanced to the final round of the application process. The Spirit of Maryland Award is presented at the halftime of the Homecoming football game on October 28, 2017. '
+  link: Past Winners and Selection Criteria
+  link_url: '/spirit/award/'
+
+service_day:
+  title: UMD Homecoming Service Day
+  date_time: 'Sunday, Oct. 22  /  9 a.m.–9 p.m.'
+  location: Ritchie Coliseum
+  description: 'UMD student organization Terps Against Hunger, in partnership with the Department of Fraternity and Sorority Life and other student groups, will package 300,000 meals for local families. All are welcome.'
+  link: Volunteer
+  link_url: http://tah.ivolunteer.com/umd_hc_2017
+
+comedy_show:
+  title: 'Comedy Show:'
+  title_sub: Hasan Minhaj
+  date_time: 'Thursday, Oct. 26  /  8 p.m.'
+  location: Ritchie Coliseum
+  description: 'Student Entertainment Events presents Hasan Minhaj, “Daily Show” senior correspondent and host of the 2017 White House Correspondents’ Dinner. His first standup show on Netflix, now streaming, is called “Homecoming King.”'
+  link: 'Buy Tickets'
+  link_url: 'https://www.see.umd.edu/hcs17'
+
+terp_carnival:
+  title: 'Terp Carnival'
+  date_time: 'Friday, Oct. 27 / 4–8 p.m.'
+  location: McKeldin Mall
+  description: 'The Division of Student Affairs hosts a party on the mall, with inflatables, games with great prizes, a beer garden, classic carnival fun and a bang-up ending: a fireworks show.'
+  link: 'More Details'
+  link_url: '/events/'
+
+football:
+  title: 'Maryland vs Indiana'
+  date_time: 'Saturday, Oct. 28  / Kickoff TBD'
+  location: One Field at Maryland Stadium
+  description: ''
+  link: 'Buy Tickets'
+  link_url: 'http://umterps.com/'
+
+homecoming_5k:
+  title: 'Homecoming 5k'
+  title_sub: Run/Walk
+  date_time: 'Saturday, Oct. 28  /  9 a.m.'
+  location: TBD
+  description: ''
+  link: 'Register'
+  link_url: 'http://www.parkrun.us/collegepark/'

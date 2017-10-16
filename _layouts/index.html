@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+    
+    {% include head.html %}
+
+<body>
+    {% include header.html %}
+    {% include hero-banner.html %}
+
+    <main>
+        <section class="red-bg">
+            <div class="container spaces">
+                <div class="row">
+                    <div class="col-lg-4 col-lg-offset-4 col-md-offset-3 col-md-6">
+                        <h2 class="white uppercase letter-spacing bold no-marg-b center">Live. Play. Stay.</h2>
+                        <h3 class="white bold no-marg-top center">You're invited to a week of Fearless Ideas.</h3>
+                        <img class="center wavy-lines" src="{{ site.baseurl }}/img/wave-lines-white.svg" alt="wavy line divider for stylistic purposes">
+                        <p class="white">Welcome back to the University of Maryland for a week of Fearless Ideas—the core of all we do here. Be a part of it all: Heart-pounding athletics. Football tailgates. Good eats. Great friends. Inspiring art. Smart conversations. Belly laughs. And a triple scoop of Terp pride.</p>
+                        <p class="white">Rediscover all you love about Maryland. And make new memories you’ll treasure as much as the old. <b>Welcome home.</b></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="white-bg">
+            <div class="container spaces">
+                <div class="row">
+                    <div class="col-md-4 center med-spaces">
+                        <img class="icon small" src="{{ site.baseurl }}/img/icons/riggs.png" alt="riggs icon">
+                        <h3 class="red bold uppercase letter-spacing">EVENTS</h3>
+                        <hr class="hr-lrg" style="max-width: 190px;">
+                        <ul class="list-unstyled">
+                            <li><a href="{{ site.baseurl }}/events/">For All</a></li>
+                            <li><a href="{{ site.baseurl }}/events/students/">For Students</a></li>
+                            <li><a href="{{ site.baseurl }}/events/alumni/">For Alumni</a></li>
+                            <li><a href="{{ site.baseurl }}/events/athletics/">Athletics</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-md-4 center med-spaces">
+                        <img class="icon small" src="{{ site.baseurl }}/img/icons/mckeldin.png" alt="mckeldin library icon">
+                        <h3 class="red bold uppercase letter-spacing">Spirit &amp; Traditions</h3>
+                        <hr class="hr-lrg" style="max-width: 190px;">
+                        <ul class="list-unstyled">
+                            <li><a href="{{ site.baseurl }}/spirit/award/">Spirit of Maryland Award</a></li>
+                            <li><a href="{{ site.baseurl }}/spirit/#carnival">Homecoming Carnival</a></li>
+                            <li><a href="{{ site.baseurl }}/spirit/#service">Terp Service Project</a></li>
+                            <li><a href="{{ site.baseurl }}/spirit/#terps">Show Your Terp Spirit</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-md-4 center med-spaces">
+                        <img class="icon small" src="{{ site.baseurl }}/img/icons/hotel.png" alt="hotel icon">
+                        <h3 class="red bold uppercase letter-spacing">Venue Details</h3>
+                        <hr class="hr-lrg" style="max-width: 190px;">
+                        <ul class="list-unstyled">
+                            <li><a href="{{ site.baseurl }}/venue/#parking">Parking &amp; Directions</a></li>
+                            <li><a href="{{ site.baseurl }}/venue/#accommodations">Accommodations &amp; Dining</a></li>
+                            <li><a href="https://www.umd.edu/history-and-mission">About UMD</a></li>
+                            <li><a href="http://www.umterps.com/ViewArticle.dbml?&DB_OEM_ID=29700&ATCLID=208142463&DB_OEM_ID=29700">About Capital One Field at Maryland Stadium</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="med-spaces">
+            <div class="container ">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <h2 class="section-title no-border no-pad no-marg">Featured Events</h2>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        {% include /sections/game-banner.html %}
+
+        {% include /sections/wear-pride.html %}
+
+        {% include /sections/alumni-feature.html %}
+
+        <section class="white-bg">
+            <div class="container event spaces">
+                <div class="row">
+                    <div class="col-md-4 no-pad-all">
+                        <img class="img-responsive full" src="{{ site.baseurl }}/img/terps-hunger.png" alt="Terps against hunger three girls laughing while making lunches">
+                        <div class="event-inner">
+                            <h2 class="match center gray bold letter-spacing thirtyfour">{{ site.data.locale.service_day.title }}</h2>
+                            <p class="center bold uppercase letter-spacing gray">{{ site.data.locale.service_day.date_time }}<br>{{ site.data.locale.service_day.location }}</p>
+                            <img class="center wavy-lines" src="{{ site.baseurl }}/img/wave-lines.svg" alt="wavy line divider for stylistic purposes">
+                            <p class="event-description match-2">{{ site.data.locale.service_day.description }}<br><br></p>
+                            <p class="center"><a class="btn btn-red square" href="{{ site.data.locale.service_day.link_url }}">{{ site.data.locale.service_day.link }}</a></p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 no-pad-all">
+                        <img class="img-responsive full" src="{{ site.baseurl }}/img/hasan.png" alt="Hasan Minhaj portait">
+                        <div class="event-inner">
+                            <h2 class="match center gray letter-spacing thirtyfour"><b>{{ site.data.locale.comedy_show.title }}</b><br>{{ site.data.locale.comedy_show.title_sub }}</h2>
+                            <p class="center bold uppercase letter-spacing gray">{{ site.data.locale.comedy_show.date_time }}<br>{{ site.data.locale.comedy_show.location }}</p>
+                            <img class="center wavy-lines" src="{{ site.baseurl }}/img/wave-lines.svg" alt="wavy line divider for stylistic purposes">
+                            <p class="event-description match-2">{{ site.data.locale.comedy_show.description }}<br><br></p>
+                            <p class="center"><a class="btn btn-red square" href="{{ site.data.locale.comedy_show.link_url }}">{{ site.data.locale.comedy_show.link }}</a></p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 no-pad-all">
+                        <img class="img-responsive full" src="{{ site.baseurl }}/img/carnival.png" alt="Photo of Mckeldin library with fireworks and a lightshow on the roof">
+                        <div class="event-inner no-border">
+                            <h2 class="match center gray bold letter-spacing thirtyfour">{{ site.data.locale.terp_carnival.title }}</h2>
+                            <p class="center bold uppercase letter-spacing gray">{{ site.data.locale.terp_carnival.time_date }}<br>{{ site.data.locale.terp_carnival.location }}</p>
+                            <img class="center wavy-lines" src="{{ site.baseurl }}/img/wave-lines.svg" alt="wavy line divider for stylistic purposes">
+                            <p class="event-description match-2">{{ site.data.locale.terp_carnival.description }}<br><br></p>
+                            <p class="center"><a class="btn btn-red square" href="{{ site.data.locale.terp_carnival.link_url }}">{{ site.data.locale.terp_carnival.link }}</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="med-spaces">
+            <div class="container ">
+                <div class="row">
+                    <div class="col-lg-8 col-md-offset-2">
+                        <h2 class="section-title no-border no-pad no-marg">Venue</h2>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        {% include /sections/venue-details.html %}
+
+        {% include /sections/venue-buttons.html %}
+
+        <div class="hero-wrapper dark clearfix">
+            <div id="hero" class="header-banner" style="background-image:url('{{ site.baseurl }}/img/bg/cheer.png');"></div>
+            <div class="container h-textarea">
+                <div class="row">
+                    <div class="col-lg-12 columns h-textarea-inner">
+                        <div class="textarea-intro">
+                            <h1 class="white normal-case center"><strong>#UMDHomecoming</strong></h1>
+                            <div class="col-lg-6 col-lg-offset-3">
+                                <div class="col-xs-4 center">
+                                    <a class="thirtyfour white" href="https://twitter.com/UMDHomecoming" target="_blank"><i class="fa fa-twitter"></i></a>
+                                </div>
+                                <div class="col-xs-4 center">
+                                    <a class="thirtyfour white" href="https://www.facebook.com/UMDHomecoming" target="_blank"><i class="fa fa-facebook-official"></i></a>
+                                </div>
+                                <div class="col-xs-4 center">
+                                    <a class="thirtyfour white" href="https://instagram.com/UMDHomecoming" target="_blank"><i class="fa fa-instagram"></i></a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section class="med-spaces">
+            <div class="container ">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <h2 class="section-title no-border no-pad no-marg">Contacts</h2>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="white-bg">
+            <div class="container event spaces">
+                <div class="row">
+                    {% for item in site.data.contacts.contacts limit:6 %}
+                    <div class="col-md-4 col-sm-6">
+                        <div class="panel panel-default red-panel contact-match">
+                            <div class="panel-body panel-body-med">
+                                <p class="no-marg-b">
+                                <b>{{ item.contact_title }}</b><br>
+                                {% if item.contact_office_label %}{{ item.contact_office_label }}:{% endif %}
+                                 {{ item.contact_phone_number }} {% if item.contact_phone_additional %}{{ item.contact_phone_additional }}{% endif %}<br>
+                                 {% if item.contact_email %}<a class="body-color" href="mailto:{{ item.contact_email }}">{{ item.contact_email }}</a>{% endif %}
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    {% include footer.html %}
+
+
+</body>
+</html>

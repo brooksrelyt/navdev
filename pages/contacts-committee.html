@@ -1,0 +1,79 @@
+---
+layout: sub-pages
+title: Contacts and Committee
+description:
+permalink: '/contacts/'
+---
+	
+    <div class="hero-wrapper overlay dark clearfix">
+        <div id="hero" class="header-banner" style="background-image:url('{{ site.baseurl }}/img/bg/contacts.png');"></div>
+        <div class="h-textarea">
+            <div class="h-textarea-inner">
+                <div class="textarea-intro">
+                    <img class="center img-responsive icon" src="{{ site.baseurl }}/img/icons/chapel-icon.png">
+                    <h1 class="white center normal-case"><strong>Contacts &amp; Committee</strong></h1>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="white-bg">
+        <div class="container spaces">
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3">
+                    <div class="panel panel-default gray-panel no-marg-b">
+                        <div class="panel-body panel-body-med">
+                            <h3 class="red"><b>Student Homecoming Committee Executive Board,</b> Homecoming 2017</h3>
+                            <br>
+                            <p>Devin Cooper, <b>Special Events Programming Assistant</b></p>
+                            <p>Hannah Devoe, <b>Special Events Programming Assistant</b></p>
+                            <p>Darrell Peoples, <b>Advisor</b></p>
+                            <p>Kristina Rubio, <b>Advisor</b></p>
+                        </div>
+                    </div>
+                    <div class="silver-bg med-spaces center">
+                        <p class="no-marg-b">To contact members of the committee:<br>301.314.5782  /  <a class="body-color" href="mailto:homecoming@umd.edu">homecoming@umd.edu</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="med-spaces">
+        <div class="container ">
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2">
+                    <h2 class="section-title no-border no-pad no-marg">Contacts</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="white-bg">
+        <div class="container event spaces">
+            <div class="row">
+                {% for item in site.data.contacts.contacts reversed limit:6 offset:1  %}
+                <div class="col-md-4">
+                    <div class="panel panel-default red-panel contact-match">
+                        <div class="panel-body panel-body-med">
+                            <p class="no-marg-b">
+                            <b>{{ item.contact_title }}</b><br>
+                            {% if item.contact_office_label %}{{ item.contact_office_label }}:{% endif %}
+                             {{ item.contact_phone_number }} {% if item.contact_phone_additional %}{{ item.contact_phone_additional }}{% endif %}<br>
+                             {% if item.contact_email %}<a class="body-color" href="mailto:{{ item.contact_email }}">{{ item.contact_email }}</a>{% endif %}</p>
+                             <hr style="max-width: 80px; margin-left: 0;">
+                            <p class="no-marg-b">{{ item.contact_name }}<br><small>{{ item.contact_name_title }}</small></p>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+

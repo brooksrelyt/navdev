@@ -1,0 +1,85 @@
+---
+layout: sub-pages
+title: Events
+description: List of upcoming Homecoming events at the University of Maryland
+banner: /img/slider/boldness.png
+permalink: '/events/'
+---
+	
+    <div class="hero-wrapper overlay dark clearfix">
+        <div id="hero" class="header-banner" style="background-image:url('{{ site.baseurl }}/img/bg/event.png');"></div>
+        <div class="h-textarea">
+            <div class="h-textarea-inner">
+                <div class="textarea-intro">
+                    <img class="center img-responsive icon" src="{{ site.baseurl }}/img/icons/riggs-lrg.png">
+                    <h1 class="white center normal-case"><strong>Events</strong></h1>
+                </div>
+            </div>
+        </div>
+    </div>
+
+	{% include /sections/event-subnav.html %}
+
+    <section class="white-bg">
+        <div class="container spaces">
+            <div class="row">
+                <div class="col-md-7 event-content-area" id="contentBlock">
+<!--                     <div class="med-spaces">
+                        <h3 class="gray bold">Day of Week, Month, Day</h3>
+                    </div> -->
+
+                    {% for calendar in site.data.events %}
+                        {% for event in calendar %}
+                            {% for results in event %}
+                                {% for event_info in results %}
+                                    {% for item in event_info %}
+                                        <section class="spaces no-pad-top eventBlock">
+                                            <p><strong class="gray">{{ item.formattedDate }}</strong></p>
+                                            <h3 class="bold red no-marg-top">{{ item.summary }}</h3>
+                                            <p class="bold">{{ item.start.time }} / {{ item.location.address }}</p>
+                                            <p class="bold">{{ item.contact.name }}</p>
+                                            <div class="med-spaces no-pad-top">
+                                                {{ item.description }}
+                                            </div>
+                                            <a class="btn btn-blk square" href="{{ item.eventlink }}">Learn More &rarr;</a>
+                                        </section>
+                                    {% endfor %}
+                                {% endfor %}
+                            {% endfor %}
+                        {% endfor %}
+                    {% endfor %}
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <a class="btn btn-blk square full" href="http://calendar.umd.edu">View All UMD Events</a>
+                        </div>
+                        <div class="col-md-6">
+                            <a class="btn btn-gray square full" href="http://umd.bwcs-hosting.com/eventsubmit/main/showMain.rdo">Submit Events</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-md-offset-1 hero-small">
+                    <div class="med-spaces no-pad-top">
+                        {% include /cards/football-game.html %}
+                    </div>
+                    <div class="med-spaces no-pad-top">
+                        {% include /cards/service-day.html %}
+                    </div>
+                    <div class="med-spaces no-pad-top">
+                        {% include /cards/comedy-show.html %}
+                    </div>
+                    <div class="med-spaces no-pad-top">
+                        {% include /cards/terp-carnival.html %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+

@@ -1,0 +1,605 @@
+/*-------------------------------- 
+
+Gallery/Card Style
+
+-------------------------------- */
+.gallery {
+    padding: 0px 15px;
+    width: 100%;
+
+/*    @include breakpoint(screen-md) { padding: 0 5%; }
+    @include breakpoint(screen-sm) { padding: 0 5%; }
+    @include breakpoint(screen-xs) { padding: 0 5%; }*/
+
+
+    ul {
+    	@include breakpoint(screen-sm) {
+			text-align: justify;
+
+			&:after {
+		        content: "";
+		        display: table;
+		        clear: both;
+		    }
+	    }
+    }
+
+    li {
+    	width: 24%;
+	    margin-bottom: 0;
+	    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+	    display: none;
+
+	    @include breakpoint(screen-md) {
+	    	width: 49%;
+	    	margin-bottom: 1em;
+	    }
+
+	    @include breakpoint(screen-sm) {
+	    	width: 49%;
+	        margin-bottom: 1em;
+	    }
+
+	    @include breakpoint(screen-xs) {
+	    	width: 100%;
+	        margin-bottom: 1em;
+	    }
+
+	    &.gap {
+		    /* used in combination with text-align: justify to align gallery elements */
+		    opacity: 0;
+		    height: 0;
+		    display: inline-block;
+		    border: none !important;
+		    box-shadow: none !important;
+		    margin: 0;
+		    padding: 0;
+
+		    /*@include breakpoint(screen-md) { display: none; }*/
+			/*@include breakpoint(screen-sm) { display: none; }*/
+			@include breakpoint(screen-xs) { display: none; }
+		}
+	}
+
+	img {
+	    display: block;
+	    width: 100%;
+	}
+}
+/* -------------------------------- 
+Duplicate gallery for three up design = 33%
+-------------------------------- */
+.gallery-two-up {
+    padding: 0 15px;
+    width: 100%;
+
+/*    @include breakpoint(screen-md) { padding: 0 15px; }
+    @include breakpoint(screen-sm) { padding: 0 15px; }
+    @include breakpoint(screen-xs) { padding: 0 15px; }*/
+
+    ul {
+    	@include breakpoint(screen-sm) {
+			text-align: justify;
+
+			&:after {
+		        content: "";
+		        display: table;
+		        clear: both;
+		    }
+	    }
+    }
+
+    li {
+    	width: 49%;
+	    margin-bottom: 0;
+	    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+	    display: none;
+	    margin-bottom: 2.5rem;
+
+	    @include breakpoint(screen-md) {
+	    	width: 49%;
+	    	margin-bottom: 1em;
+	    }
+
+	    @include breakpoint(screen-sm) {
+	    	width: 49%;
+	        margin-bottom: 1em;
+	    }
+
+	    @include breakpoint(screen-xs) {
+	    	width: 100%;
+	        margin-bottom: 1em;
+	    }
+
+	    &.gap {
+		    /* used in combination with text-align: justify to align gallery elements */
+		    opacity: 0;
+		    height: 0;
+		    display: inline-block;
+		    border: none !important;
+		    box-shadow: none !important;
+		    margin: 0;
+		    padding: 0;
+
+			/*@include breakpoint(screen-md) { display: none; }*/
+			/*@include breakpoint(screen-sm) { display: none; }*/
+			@include breakpoint(screen-xs) { display: none; }
+		}
+	}
+
+	img {
+	    display: block;
+	    width: 100%;
+	}
+
+	p {
+		margin-bottom: 2rem !important;
+		text-transform: none;
+		font-size: 16px;
+		line-height: 21px;
+		color: $umd_gray;
+		text-align: left;
+	}
+
+/*	a.btn-tag {
+		margin-bottom: 1rem;
+		display: inline-block;
+	}*/
+}
+/* -------------------------------- 
+Duplicate gallery for three up design = 33%
+-------------------------------- */
+.gallery-three-up {
+    padding: 0 15px;
+    width: 100%;
+
+/*    @include breakpoint(screen-md) { padding: 0 15px; }
+    @include breakpoint(screen-sm) { padding: 0 15px; }
+    @include breakpoint(screen-xs) { padding: 0 15px; }*/
+
+    ul {
+    	@include breakpoint(screen-sm) {
+			text-align: justify;
+
+			&:after {
+		        content: "";
+		        display: table;
+		        clear: both;
+		    }
+	    }
+    }
+
+    li {
+    	width: 32%;
+	    margin-bottom: 0;
+	    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+	    display: none;
+	    margin-bottom: 2.5rem;
+
+	    @include breakpoint(screen-md) {
+	    	width: 49%;
+	    	margin-bottom: 1em;
+	    }
+
+	    @include breakpoint(screen-sm) {
+	    	width: 49%;
+	        margin-bottom: 1em;
+	    }
+
+	    @include breakpoint(screen-xs) {
+	    	width: 100%;
+	        margin-bottom: 1em;
+	    }
+
+	    &.gap {
+		    /* used in combination with text-align: justify to align gallery elements */
+		    opacity: 0;
+		    height: 0;
+		    display: inline-block;
+		    border: none !important;
+		    box-shadow: none !important;
+		    margin: 0;
+		    padding: 0;
+
+			/*@include breakpoint(screen-md) { display: none; }*/
+			/*@include breakpoint(screen-sm) { display: none; }*/
+			@include breakpoint(screen-xs) { display: none; }
+		}
+	}
+
+	img {
+	    display: block;
+	    width: 100%;
+	}
+
+	p {
+		margin-bottom: 2rem !important;
+		text-transform: none;
+		font-size: 16px;
+		line-height: 21px;
+		color: $umd_gray;
+		text-align: left;
+	}
+
+/*	a.btn-tag {
+		margin-bottom: 1rem;
+		display: inline-block;
+	}*/
+}
+
+/* -------------------------------- 
+Contents below in css format due to grid break/styles breaking 
+-------------------------------- */
+@media only screen and (min-width: 768px) {
+    .gallery ul {
+        text-align: justify;
+    }
+    .gallery-two-up ul {
+        text-align: justify;
+    }
+    .gallery-three-up ul {
+        text-align: justify;
+    }
+}
+@media only screen and (min-width: 1170px) {
+	.gallery {
+        padding: 0px 15px;
+        -webkit-transition: width 0.3s;
+        -moz-transition: width 0.3s;
+        transition: width 0.3s;
+    }
+	.gallery-two-up {
+        padding: 0px 15px;
+        -webkit-transition: width 0.3s;
+        -moz-transition: width 0.3s;
+        transition: width 0.3s;
+    }
+    .gallery-three-up {
+        padding: 0px 15px;
+        float: right;
+        -webkit-transition: width 0.3s;
+        -moz-transition: width 0.3s;
+        transition: width 0.3s;
+    }
+}
+
+/* -------------------------------- 
+
+filter cards
+
+-------------------------------- */
+.card-grid {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+	    display: inline-block;
+	    background-color: #fff;
+	    border: 1px solid $umd_lightgray;
+	    vertical-align: top;
+	    
+	    .card-img {
+	    	/*position: absolute;*/
+			background-repeat: no-repeat;
+			height: 200px;
+			top: 0;
+			display: block;
+			overflow: hidden;
+			-webkit-transform: translate3d(0, 0, 0);
+			transform: translate3d(0, 0, 0);
+			width: 100%;
+			
+		    .card-img-inner {
+				width: 100%;
+				height: 100%;
+				background: #d9d9d9 no-repeat 50% 50%;
+				background-size: cover;
+		    }
+		}
+
+	    img {
+		    display: block;
+		    width: 100%;
+		    height: auto;
+		    background-color: $umd_red;
+		    -webkit-transition: opacity .2s;
+		    -moz-transition: opacity .2s;
+		    transition: opacity .2s;
+		}
+	}
+
+	.image-wrapper {
+	    position: relative;
+	    display: block;
+	    padding: 4px 4px 0 4px;
+
+	    &:hover {
+			.description {
+			    opacity: 1;
+			    visibility: visible;
+			    pointer-events: auto;
+			}
+	    }
+
+	    .description {
+		    position: absolute;
+		    z-index: 1;
+		    height: 100%;
+		    bottom: 0;
+		    padding: 25px 11px;
+		    font-size: 1.35rem;
+		    line-height: 1.4;
+		    background: $white;
+		    color: $umd_gray;
+		    opacity: 0;
+		    visibility: hidden;
+		    pointer-events: none;
+		    -webkit-transition: opacity .2s, visibility .2s;
+		    -moz-transition: opacity .2s, visibility .2s;
+		    transition: opacity .2s, visibility .2s;
+		    text-align: left;
+
+		    &::after {
+			    position: absolute;
+			    content: '';
+			    width: calc(100% - 22px);
+			    height: 1px;
+			    left: 11px;
+			    bottom: 0;
+			    background: #e6e6e6;
+			}
+
+			&::before {
+			    content: '';
+			    position: absolute;
+			    bottom: 100%;
+			    width: 100%;
+			    height: 6px;
+			    left: 0;
+			    background-color: transparent;
+			    background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, .05), transparent);
+			    background-image: linear-gradient(to top, rgba(0, 0, 0, .05), transparent);
+			}
+		}
+	}
+
+	.info {
+	    position: relative;
+	    padding: 1.25rem;
+	    vertical-align: top;
+
+	    h2 {
+		    font-size: 1.5rem;
+		    line-height: 1.4rem;
+		    margin: 0;
+		    text-transform: uppercase;
+		    font-weight: bold;
+		}
+
+		p {
+		    margin: 0;
+		    font-size: 16px;
+		    line-height: 21px;
+		    color: $umd_gray;
+		    text-align: left;
+		}
+
+		a {
+		    padding: 0;
+		    // font-weight: bold;
+		    color: $umd_red;
+		    -webkit-transition: opacity .2s;
+		    -moz-transition: opacity .2s;
+		    transition: opacity .2s;
+		}
+
+		hr {
+			max-width: 30px;
+			margin: 1rem 0;
+			border-top: 2px solid $umd_silver;
+		}
+
+		h1, h2, h3, h4, h5, h6 {
+			text-align: left;
+		}
+	}
+	
+	&:after {
+	    clear: both;
+	    content: "";
+	    display: table;
+	}
+
+}
+
+/* -------------------------------- 
+Contents below in css format due to grid break/styles breaking 
+-------------------------------- */
+.card-grid .image-wrapper span {
+    /*display: block;*/
+    /*height: 0;*/
+    /*padding-bottom: 75%;*/
+}
+
+.card-style-2 {
+	.card-grid {
+	    list-style-type: none;
+	    margin: 0;
+	    padding: 0;
+
+	    li {
+		    display: inline-block;
+		    background-color: #fff;
+	/*	    border-radius: 5px;
+		    box-shadow: 0 1px 2px rgba(0, 0, 0, .1);
+		    -webkit-transition: box-shadow .3s;
+		    -moz-transition: box-shadow .3s;
+		    transition: box-shadow .3s;*/
+
+		    img {
+			    display: block;
+			    width: 100%;
+			    height: auto;
+			    background-color: $umd_red;
+			    -webkit-transition: opacity .2s;
+			    -moz-transition: opacity .2s;
+			    transition: opacity .2s;
+			}
+		}
+
+		.image-wrapper {
+		    position: relative;
+		    display: block;
+		    padding: 4px 4px 0 4px;
+
+		    &:hover {
+				.description {
+				    opacity: 1;
+				    visibility: visible;
+				    pointer-events: auto;
+				}
+		    }
+
+		    .description {
+			    position: absolute;
+			    z-index: 1;
+			    height: 100%;
+			    bottom: 0;
+			    padding: 25px 11px;
+			    font-size: 1.35rem;
+			    line-height: 1.4;
+			    background: $white;
+			    color: $umd_gray;
+			    opacity: 0;
+			    visibility: hidden;
+			    pointer-events: none;
+			    -webkit-transition: opacity .2s, visibility .2s;
+			    -moz-transition: opacity .2s, visibility .2s;
+			    transition: opacity .2s, visibility .2s;
+			    text-align: left;
+
+			    &::after {
+				    position: absolute;
+				    content: '';
+				    width: calc(100% - 22px);
+				    height: 1px;
+				    left: 11px;
+				    bottom: 0;
+				    background: #e6e6e6;
+				}
+
+				&::before {
+				    content: '';
+				    position: absolute;
+				    bottom: 100%;
+				    width: 100%;
+				    height: 6px;
+				    left: 0;
+				    background-color: transparent;
+				    background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, .05), transparent);
+				    background-image: linear-gradient(to top, rgba(0, 0, 0, .05), transparent);
+				}
+			}
+		}
+
+		.info {
+		    position: relative;
+		    padding: 1.25rem;
+
+		    h2 {
+			    font-size: 1.5rem;
+			    line-height: 1.4rem;
+			    margin: 0;
+			    text-transform: none;
+			    font-weight: bold;
+			}
+
+			p {
+			    margin: 0;
+			    font-size: 16px;
+			    line-height: 21px;
+			    color: $umd_gray;
+			    text-align: left;
+			}
+
+			a {
+			    padding: 0;
+			    // font-weight: bold;
+			    color: $umd_red;
+			    -webkit-transition: opacity .2s;
+			    -moz-transition: opacity .2s;
+			    transition: opacity .2s;
+
+			    &.text-link {
+			    	color: $umd_gray !important;
+			    	font-weight: bold;
+			    }
+			}
+
+			hr {
+				max-width: 30px;
+				margin: 1rem 0;
+				border-top: 2px solid $umd_silver;
+			}
+
+			h1, h2, h3, h4, h5, h6 {
+				text-align: left;
+			}
+		}
+		
+		&:after {
+		    clear: both;
+		    content: "";
+		    display: table;
+		}
+	}
+}
+a {
+	.img-card {
+		overflow: hidden;
+		position: relative;
+
+		.img-card-header {
+			height: 95px;
+			z-index: 10;
+			position: relative;
+			background: #fff;
+		}
+
+		.img-card-display {
+			background-color: #666666;
+			position: absolute;
+			display: block;
+		}
+		img {
+			position: absolute;
+			height: 100%;
+			width: auto;
+			display: block;
+			margin: 0 auto;
+			left: -13%;
+			-webkit-transition: 0.3s all;
+		    transition: 0.3s all;
+		}
+	}
+
+
+    &:hover {
+    	text-decoration: none;
+
+    	.img-card-display {
+    		img {
+				-webkit-transform: scale(1.1);
+				-ms-transform: scale(1.1);
+				transform: scale(1.1);
+			}
+		}
+    }
+}
+
+
+
+
+
+

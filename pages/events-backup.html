@@ -1,0 +1,93 @@
+---
+layout: sub-pages
+title: Events
+description: To Turn Imagination into Innovation
+banner: /img/slider/boldness.png
+permalink: '/events/'
+---
+	
+    <div class="hero-wrapper overlay dark clearfix">
+        <div id="hero" class="header-banner" style="background-image:url('{{ site.baseurl }}/img/bg/event.png');"></div>
+        <div class="h-textarea">
+            <div class="h-textarea-inner">
+                <div class="textarea-intro">
+                    <img class="center img-responsive icon" src="{{ site.baseurl }}/img/icons/riggs-lrg.png">
+                    <h1 class="white center normal-case"><strong>Events</strong></h1>
+                </div>
+            </div>
+        </div>
+    </div>
+
+	{% include /sections/event-subnav.html %}
+
+    <section class="white-bg">
+        <div class="container spaces">
+            <div class="row">
+                <div class="col-md-8 event-content-area">
+                    <div class="med-spaces">
+                        <h3 class="gray bold">Day of Week, Month, Day</h3>
+                    </div>
+
+                    {% for calendar in site.data.events %}
+                        {% for event in calendar %}
+    <!--                     {{ event.events }} -->
+                            {% for results in event %}
+                                <!-- {{ results }} -->
+
+                                {% for item in results[1] %}
+                                    <p>{{ item }}</p><!-- 
+                                    <p>{{ item.formattedDate }}</p> -->
+                                {% endfor %}
+                            {% endfor %}
+                            <!-- {% for results in event %}
+                            {{ results }}
+                                {% for event_info in results %}
+                                    {% for item in event_info %}
+                                        <section class="med-spaces no-pad-top">
+                                            <h3 class="bold red no-marg-top">{{ item.summary }}</h3>
+                                            <p class="bold">Event time / {{ item.formattedDate }} </p>
+                                            <p class="bold">Sponsor Organizations</p>
+                                            <div class="med-spaces">
+                                                {{ item.description }}
+                                            </div>
+                                        </section>
+                                    {% endfor %}
+                                {% endfor %}
+                            {% endfor %} -->
+                        {% endfor %}
+                    {% endfor %}
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <a class="btn btn-blk square full" href="http://calendar.umd.edu">All Homecoming Events</a>
+                        </div>
+                        <div class="col-md-6">
+                            <a class="btn btn-gray square full" href="http://umd.bwcs-hosting.com/eventsubmit/main/showMain.rdo">Submit Events</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 hero-small">
+                    <div class="med-spaces no-pad-top">
+                        {% include /cards/football-game.html %}
+                    </div>
+                    <div class="med-spaces no-pad-top">
+                        {% include /cards/service-day.html %}
+                    </div>
+                    <div class="med-spaces no-pad-top">
+                        {% include /cards/comedy-show.html %}
+                    </div>
+                    <div class="med-spaces no-pad-top">
+                        {% include /cards/terp-carnival.html %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+

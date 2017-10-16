@@ -1,0 +1,57 @@
+contacts:
+  -
+    contact_title: Student Homecoming Committee
+    contact_office_label:
+    contact_phone_number: 301.314.5782
+    contact_phone_additional:
+    contact_email: homecoming@umd.edu
+    contact_name: Cynthia Martinez
+    contact_name_title: Director of Brand Marketing
+  -
+    contact_title: The Clarice Smith Performing Arts Center
+    contact_office_label: Ticket Office
+    contact_phone_number: 301.405.2787
+    contact_phone_additional: (ARTS)
+    contact_email: tickets-theclarice@umd.edu
+    contact_name: Bobby Asher
+    contact_name_title: Senior Associate Director, Artist Partner Program
+  -
+    contact_title: Department of Fraternity and Sorority Life
+    contact_office_label:
+    contact_phone_number: 301.314.7172
+    contact_phone_additional:
+    contact_email:
+    contact_name: Corin Gioia Edwards
+    contact_name_title: Associate Director, Programming and Advising
+  -
+    contact_title: University Athletics
+    contact_office_label: Ticket Office
+    contact_phone_number: 301.314.7070
+    contact_phone_additional: or 800.IM.A.TERP
+    contact_email: terptix@umd.edu
+    contact_name: Jordan Looby
+    contact_name_title: Director of Marketing
+  -
+    contact_title: University of Maryland Alumni Association
+    contact_office_label:
+    contact_phone_number: 301.405.4678
+    contact_phone_additional: or 800.336.8627
+    contact_email: alumni@umd.edu
+    contact_name: Lauren Norris
+    contact_name_title: Director, Student and Recent Graduate Programming
+  -
+    contact_title: Student Entertainment Events (SEE)
+    contact_office_label:
+    contact_phone_number: 301.314.8498
+    contact_phone_additional:
+    contact_email: seecomedy@umd.edu
+    contact_name: Michal (Mi-call) Antonov
+    contact_name_title: SEE Comedy Director 
+  -
+    contact_title: University Marketing and Communications
+    contact_office_label:
+    contact_phone_number: 301.405.9992 
+    contact_phone_additional:
+    contact_email: cynthia1@umd.edu
+    contact_name: Cynthia Martinez
+    contact_name_title: Director of Brand Marketing

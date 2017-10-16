@@ -1,0 +1,34 @@
+        <section class="spaces white-bg mission no-marg-b">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-3 center">
+                        {% if page.title == 'Events' %}
+                        <a class="btn btn-blk square featured yellow-bg" href="{{ site.baseurl }}/events/">All Events</a>
+                        {% elsif page.title != 'Events' %}
+                        <a class="btn btn-blk square featured" href="{{ site.baseurl }}/events/">All Events</a>
+                        {% endif %}
+                    </div>
+                    <div class="col-sm-3 center">
+                        {% if page.title == 'Students' %}
+                        <a class="btn btn-blk square featured yellow-bg" href="{{ site.baseurl }}/events/students/">For Students</a>
+                        {% elsif page.title != 'Students' %}
+                        <a class="btn btn-blk square featured" href="{{ site.baseurl }}/events/students/">For Students</a>
+                        {% endif %}
+                    </div>
+                    <div class="col-sm-3 center">
+                        {% if page.title == 'Alumni' %}
+                        <a class="btn btn-blk square featured yellow-bg" href="{{ site.baseurl }}/events/alumni/">For Alumni</a>
+                        {% elsif page.title != 'Alumni' %}
+                        <a class="btn btn-blk square featured" href="{{ site.baseurl }}/events/alumni/">For Alumni</a>
+                        {% endif %}
+                    </div>
+                    <div class="col-sm-3 center">
+                        {% if page.title == 'Athletics' %}
+                        <a class="btn btn-blk square featured yellow-bg" href="{{ site.baseurl }}/events/athletics/">Athletics</a>
+                        {% elsif page.title != 'Athletics' %}
+                        <a class="btn btn-blk square featured" href="{{ site.baseurl }}/events/athletics/">Athletics</a>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+        </section>

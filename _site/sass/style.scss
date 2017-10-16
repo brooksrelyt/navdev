@@ -1,0 +1,31 @@
+// BOOTSTRAP - Use 'app' to adjust/overwrite bootstrap styles
+// !!! Do not change any styles inside default bootstrap files
+@import "bootstrap";
+@import "app";
+
+@import "font-awesome/font-awesome-compass";
+@import "font-awesome/font-awesome";
+
+@import "variables";
+@import "normalize";
+@import "mixins";
+@import "base";
+//@import "interface";
+
+// UTILITIES - Self-contained utilities
+
+
+// COMPONENTS - Self-contained components
+@import "components/nav";
+@import "components/footer";
+@import "components/feature-banner";
+@import "components/cards";
+@import "components/accordion";
+@import "components/forms";
+
+// PAGES - Page-specific styles
+@import "pages/homepage";
+@import "pages/events";
+
+// Styles Specific to new project
+@import "project"

@@ -1,0 +1,349 @@
+
+.wavy-lines {
+    max-width: 188px;
+    padding-top: 1em;
+    padding-bottom: 1.5em;
+}
+
+.eventBlock {
+    border-bottom: 1px solid $umd_silver;
+    margin-bottom: 5.125rem;
+}
+.testudo-float {
+    top: 5px;
+    -moz-top: 16px;
+    position: absolute;
+    max-width: 300px;
+
+    @include breakpoint(screen-lg) {
+        top: 93px;
+        -moz-top: 98px;
+    }
+
+    @include breakpoint(screen-md) {
+        display: none !important;
+    }
+    @include breakpoint(screen-sm) {
+        display: none !important;
+    }
+    @include breakpoint(screen-xs) {
+        display: none !important;
+    }
+}
+.event-description {
+    padding: 0 2em 2em 2.5em;
+}
+.digital-disruptors-title {
+    h1 {
+        line-height: 75px !important;
+        margin-top: 25px;
+        margin-bottom: 50px !important;
+
+        span {
+            letter-spacing: 3px;
+        }
+    }
+
+    h4 {
+        font-size: 21px;
+        line-height: 21px;
+
+        &::after {
+            border-bottom: 1px solid #fff;
+        }
+    }
+
+
+}
+
+// Custom Panel built for Digital Disruptors
+.custom-panel {
+    position: relative;
+    margin-bottom: 2em;
+
+    .top {   
+        background-color: $umd_yellow;
+        padding: 1.5em;
+        color: $body-color;
+
+        h2 {
+            font-size: 55px;
+            line-height: 55px;
+            
+            @include breakpoint(screen-md) {
+                font-size: 42px;
+                line-height: 42px;
+            }
+            @include breakpoint(screen-sm) {
+                font-size: 34px;
+                line-height: 34px;
+            }
+            @include breakpoint(screen-xs) {
+                font-size: 26px;
+                line-height: 26px;
+            }
+        }
+
+        h3 {
+            font-size: 34px;
+            line-height: 34px;
+            color: $body-color;
+        }
+
+        hr {
+            max-width: 150px;
+            border-top: 8px solid $body-color;
+            margin-left: 0;
+
+            @include breakpoint(screen-md) {}
+            @include breakpoint(screen-sm) {}
+            @include breakpoint(screen-xs) {}
+
+            &.white {
+                border-color: #ffffff !important;
+            }
+
+            &.med {
+                border-top: 5px solid $white !important;
+            }
+
+            &.thin {
+                border-top: 1px solid $white;
+            }
+
+            &.full {
+                max-width: 100%;
+            }
+        }
+
+        &.no-bg-color {
+            background-color: $umd_yellow;
+            padding: 1.5em;
+        }
+    }
+
+    .bottom {
+        border-left: 1px solid $umd_lightgray;
+        border-right: 1px solid $umd_lightgray;
+
+        .bottom-inner {
+            padding: 1.5em;
+        }
+
+        hr {
+            border-top: 1px solid $body-color;
+            max-width: 150px;
+            margin-left: 0;
+
+            &.small {
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+        }
+
+        h6 {
+            text-transform: uppercase;
+            font-weight: bold;
+            color: $umd_gray;
+            margin: 0;
+        }
+
+        h1 {
+            margin: 0;
+            color: $body-color;
+            line-height: 55px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 21px;
+            line-height: 26px;
+
+            &.small {
+                font-size: 13px;
+                line-height: 16px;
+            }
+        }
+        
+        .right {
+            border-left: 1px solid $umd_lightgray;
+        }
+    }
+
+    a.dropdown-button {
+        background-color: $umd_lightgray;
+        width: 100%;
+        padding: 1.5rem 2rem;
+        display: block;
+        text-align: center;
+        position: relative;
+        line-height: 1.25em;
+        cursor: pointer;
+
+        color: $umd_gray;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+
+        &:hover, &:focus {
+            background-color: $umd_silver;
+        }
+
+        i {
+            position: absolute;
+            left: 0;
+            top: 0;
+            padding: 1.5rem 2rem;
+            line-height: 1.25em;
+        }
+    }
+
+    a.register-button {
+        padding: 1.5rem 2rem;
+        width: 100%;
+        display: block;
+        background-color: $umd_red;
+        color: #ffffff;
+        text-transform: uppercase;
+        text-align: center;
+        letter-spacing: 1px;
+        line-height: 1.25em;
+
+        &:hover, &:focus, &:active, &:active:focus {
+            background-color: $darkred;
+            border-color: $darkred;
+        }
+
+        &.disabled {
+            opacity: 0.65;
+
+            &:hover, &:focus, &:active, &:active:focus {
+                background-color: $umd_red;
+                border-color: $umd_red;
+                cursor: default !important;
+            }
+        }
+    }
+}
+
+.custom-panel-dropdown {
+    background-color: $umd_lightgray;
+    position: absolute;
+    z-index: 10;
+
+    @include breakpoint(screen-lg) { position: relative !important; }
+    @include breakpoint(screen-md) { position: relative !important; }
+    @include breakpoint(screen-sm) { position: relative !important; }
+    @include breakpoint(screen-xs) { position: relative !important; }
+
+    a.solid {
+        background-color: $umd_gray; 
+        border-color: $umd_gray;
+        padding-top: 1em !important;
+        padding-bottom: 1em !important;
+
+        &:hover, &:focus {
+            background-color: #7C7B7B; 
+            border-color: #7C7B7B;
+        }
+    }
+    
+}
+
+.panel-1, .panel-2 {
+    display: none;
+}
+
+.open.arrow-1, .open.arrow-2 {
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg)
+}
+
+.speaker {
+    border-top: 1px solid $umd_silver;
+    padding-top: 1.25em;
+    padding-bottom: 1.25em;
+
+    &:first-child {
+        border-top: none;
+        margin-top: 0;
+        padding-top: 1.25em;
+    }
+}
+
+.social {
+    ul {
+        list-style-type: none;
+        padding: 0;
+
+        li {
+            a {
+                color: #fff;
+                padding: 16px;
+                font-size: 16px;
+
+                &:first-child {
+                    padding-left: 0;
+                }
+            }
+        }
+    }
+}
+
+.bio {
+    p {
+        font-size: 21px;
+        line-height: 34px;
+        margin-bottom: 34px;
+    }
+}
+
+
+// fix to compensate for bootstraps weird push and pull offset area - offset = 1
+.speaker-shift {
+    margin-left: 8.333333%;
+
+    @include breakpoint(screen-lg) { margin-left: 8.333333%; }
+    @include breakpoint(screen-md) { margin-left: 0; }
+    @include breakpoint(screen-sm) { margin-left: 0; }
+    @include breakpoint(screen-xs) { margin-left: 0; }
+
+}
+
+.schools {
+    a {
+        &:hover, &:focus {
+            opacity: 0.7;
+        }
+    }
+}
+
+.event {
+    .event-inner {
+        border-right: 1px solid $umd_lightgray;
+
+        &.no-border {
+            border-right: 0;
+        }
+
+        @include breakpoint(screen-lg) {
+            border-right: 0;
+        }
+        @include breakpoint(screen-md) {
+            border-right: 0;
+            margin-bottom: 2.5em;
+        }
+        @include breakpoint(screen-sm) {
+            border-right: 0;
+            margin-bottom: 2.5em;
+        }
+        @include breakpoint(screen-xs) {
+            border-right: 0;
+            margin-bottom: 2.5em;
+        }
+    }
+    
+}
+
+.event-content-area {}
